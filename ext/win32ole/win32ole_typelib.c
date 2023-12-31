@@ -819,7 +819,7 @@ foletypelib_ole_types(VALUE self)
 static VALUE
 foletypelib_inspect(VALUE self)
 {
-    return default_inspect(self, "WIN32OLE_TYPELIB");
+    return default_inspect(self, "WIN32OLE::TypeLib");
 }
 
 VALUE cWIN32OLE_TYPELIB;
