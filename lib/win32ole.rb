@@ -29,4 +29,19 @@ if defined?(WIN32OLE)
       []
     end
   end
+
+  class Object
+    deprecate_constant(*%w[
+      WIN32OLEQueryInterfaceError
+      WIN32OLERuntimeError
+      WIN32OLE_EVENT
+      WIN32OLE_METHOD
+      WIN32OLE_PARAM
+      WIN32OLE_RECORD
+      WIN32OLE_TYPE
+      WIN32OLE_TYPELIB
+      WIN32OLE_VARIABLE
+      WIN32OLE_VARIANT
+    ])
+  end
 end
