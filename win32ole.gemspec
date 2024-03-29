@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
 
+  spec.extensions = ["ext/win32ole/extconf.rb"]
   pathspecs = %W[
     :(exclude,literal)#{File.basename(__FILE__)}
     :^/bin/ :^/test/ :^/rakelib/ :^/.git* :^/Gemfile* :^/Rakefile*
